@@ -25,8 +25,7 @@ const Login = () => {
   };
 
   const LoginForm = () => {
-    
-  const [showPasswordLogin, setShowPasswordLogin] = useState(false);
+    const [showPasswordLogin, setShowPasswordLogin] = useState(false);
 
     return (
       <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-full max-w-md items-center mt-20 transition duration-1000 ease-out">
@@ -55,13 +54,13 @@ const Login = () => {
               className="text-gray-500 text-2xl mr-2"
             />
             <div className="flex-1 w-full">
-  <input
-    type={showPasswordLogin ? "text" : "password"}
-    name="loginPassword"
-    placeholder="Password"
-    className="bg-transparent outline-none w-full text-gray-700"
-  />
-</div>
+              <input
+                type={showPasswordLogin ? "text" : "password"}
+                name="loginPassword"
+                placeholder="Password"
+                className="bg-transparent outline-none w-full text-gray-700"
+              />
+            </div>
             <FontAwesomeIcon
               icon={showPasswordLogin ? faEyeSlash : faEye}
               className="text-gray-500 text-lg ml-2 cursor-pointer"
@@ -86,7 +85,6 @@ const Login = () => {
   };
 
   const SignUpForm = () => {
-
     const [showPasswordRegister, setShowPasswordRegister] = useState(false); // Separate state for registration form
 
     return (
@@ -155,7 +153,7 @@ const Login = () => {
         >
           Sign In to your Account
         </p>
-        <SocialIcons color1="text-white"/>
+        <SocialIcons color1="text-white" />
       </div>
     );
   };

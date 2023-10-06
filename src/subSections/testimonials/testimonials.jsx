@@ -5,6 +5,7 @@ const TestimonialSection = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const testimonialsData = [
     {
       name: "John Doe",
@@ -31,10 +32,10 @@ const TestimonialSection = () => {
   ];
   
 
-  // useEffect(() => {
-  //   // Simulating data fetching from an API or data source
-  //   setTestimonials(testimonialsData);
-  // }, []);
+  useEffect(() => {
+    // Simulating data fetching from an API or data source
+    setTestimonials(testimonialsData);
+  }, [testimonialsData]);
 
   useEffect(() => {
     const interval = setInterval(() => {
